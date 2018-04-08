@@ -1,3 +1,26 @@
+body {
+    color: #3651a3;
+}
+
+/* nav */
+nav{
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(54, 81, 162, 0.75);
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: rgba(54, 81, 162, 1);
+    text-decoration: underline;
+    text-decoration-color: #f5a706;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(54, 81, 162, 1);
+}
+
 /* Fix jumbotron padding */
 
 .jumbotron {
