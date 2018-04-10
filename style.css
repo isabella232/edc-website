@@ -5,6 +5,10 @@
     color: rgba(245, 168, 0, 1)!important;
 }
 
+.bg-secondary {
+    background-color: rgba(153, 155, 158, 1)!important;
+}
+
 /* nav */
 nav{
     text-transform: uppercase;
@@ -50,4 +54,66 @@ nav{
 
 .orange-line {
     letter-spacing: -8px;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 430px){
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 576px){
+    .display-4 {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* Fix spacing of all .container-fluids */
+
+.container-fluid {
+    padding-bottom: 2rem;
+}
+
+.container-fluid + .container-fluid {
+   padding-top: 2rem
+}
+
+/* Fix spacing of cards on mobile */
+
+.card {
+    margin: auto;
+    margin-top: 50px;
+}
+
+@media (min-width: 576px){
+    .card {
+        margin-top: 0px;
+    }
+}
+
+/* Fix spacing of logos on mobile */
+
+.partner {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 250px;
+}
+
+@media (min-width: 576px){
+    .partner {
+        margin-top: 0px;
+        max-width: 100%;
+    }
+}
+
+
+/* Contact us section */
+
+.contact {
+    background-image: url('/images/geometric-background.png');
 }
