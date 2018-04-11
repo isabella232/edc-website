@@ -96,6 +96,11 @@ nav{
     }
 }
 
+/* Make cards' images smaller */
+.card-img-top{
+    padding: 30px;
+}
+
 /* Fix spacing of logos on mobile */
 
 .partner {
