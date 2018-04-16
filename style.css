@@ -9,6 +9,16 @@
     background-color: rgba(153, 155, 158, 1)!important;
 }
 
+/* headings */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2rem;
+}
+
+h1.display-4 {
+    margin-bottom: .5rem;
+}
+
 /* nav */
 nav{
     text-transform: uppercase;
@@ -40,7 +50,7 @@ nav{
 
 @media (min-width: 576px){
     .jumbotron {
-        padding: 16rem 0rem;
+        padding: 12rem 0rem;
     }
 }
 
@@ -77,10 +87,17 @@ nav{
 
 .container-fluid {
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
-.container-fluid + .container-fluid {
-   padding-top: 2rem
+.lots-of-padding{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.lots-of-padding-below-hero{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 /* Fix spacing of cards on mobile */
@@ -116,7 +133,6 @@ nav{
         max-width: 100%;
     }
 }
-
 
 /* Contact us section */
 
