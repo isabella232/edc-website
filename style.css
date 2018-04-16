@@ -123,3 +123,8 @@ nav{
 .contact {
     background-image: url('/images/geometric-background.png');
 }
+
+.btn-primary {
+    background-color: rgba(66, 92, 199, 1);
+    border-color: rgba(66, 92, 199, 1);
+}
