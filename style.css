@@ -149,3 +149,8 @@ nav{
     background-color: rgba(66, 92, 199, 1);
     border-color: rgba(66, 92, 199, 1);
 }
+
+/* Fix mailchimp banner */
+.mc-banner{
+    top: 86px!important;
+}
