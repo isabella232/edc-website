@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117655351-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117655351-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +28,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-    <meta name="application-name" content="The Event Discovery Company"/>
+    <meta name="application-name" content="The Event Discovery Company" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 
@@ -121,7 +134,9 @@
                     <img class="card-img-top" src="/images/edc-more.svg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Add to any website</h5>
-                        <p class="card-text">Just paste an embed code into your content and it'll become a beautiful, mobile-friendly website calendar.</p>
+                        <p class="card-text">Just paste an embed code into your content and it'll become a beautiful, mobile-friendly website
+                            calendar.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -180,7 +195,7 @@
         // fixes link offsets
         var offset = 100;
 
-        $('.navbar li a').click(function(event) {
+        $('.navbar li a').click(function (event) {
             event.preventDefault();
             $($(this).attr('href'))[0].scrollIntoView();
             scrollBy(0, -offset);
