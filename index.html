@@ -28,7 +28,7 @@
     <title>The Event Discovery Company</title>
 </head>
 
-<body>
+<body style="position:relative" data-spy="scroll" data-offset="200" data-target=".navbar" id="home">
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-primary">
         <a class="navbar-brand" href="#">
             <img src="/images/the-event-discovery-company-logo.svg" height="60" alt="The Event Discovery Company logo">
@@ -40,19 +40,19 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Vision</a>
+                    <a class="nav-link" href="#our-vision">Our Vision</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Products</a>
+                    <a class="nav-link" href="#our-products">Our Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center text-primary lots-of-padding-below-hero">
+    <div id="our-vision" class="container-fluid text-center text-primary lots-of-padding-below-hero">
         <h1>Our Vision</h1>
         <div class="row">
             <div class="col-md"></div>
@@ -92,7 +92,7 @@
     </div>
 
     <div class="container-fluid text-center bg-light text-primary lots-of-padding">
-        <h1>Our Products</h1>
+        <h1 id="our-products">Our Products</h1>
         <div class="row">
             <div class="col-12">
                 <h2>The Connected Calendar</h2>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="container-fluid text-center text-primary contact lots-of-padding">
-        <h1>Interested in working with us?</h1>
+        <h1 id="contact-us">Interested in working with us?</h1>
         <div class="row">
             <div class="col-sm">
                 <a class="btn btn-primary btn-lg" href="mailto:contact@eventdiscovery.company" role="button">Contact Us</a>
@@ -175,6 +175,17 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script>
+        // fixes link offsets
+        var offset = 100;
+
+        $('.navbar li a').click(function(event) {
+            event.preventDefault();
+            $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });
+    </script>
 </body>
 
 </html>
