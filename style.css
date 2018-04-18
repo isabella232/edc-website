@@ -128,14 +128,13 @@ nav{
 .partner {
     margin: auto;
     margin-top: 2rem;
-    max-width: 250px;
-    max-height: 150px;
+    max-width: 150px;
+    max-height: 100px;
 }
 
 @media (min-width: 576px){
     .partner {
         margin-top: 0px;
-        max-width: 100%;
     }
 }
 
