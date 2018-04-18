@@ -154,3 +154,8 @@ nav{
 .mc-banner{
     top: 86px!important;
 }
+
+/* our vision section */
+#our-vision{
+    font-size: 1.1rem;
+}
